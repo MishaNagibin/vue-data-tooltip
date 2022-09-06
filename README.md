@@ -13,6 +13,12 @@ import VueDataTooltip from "vue-data-tooltip"
 Vue.use(VueDataTooltip)
 ```
 
+Также в `Vue.use(VueDataTooltip)` вы можете передать id элемента в котором рендерится сайт, если же он указан не будет, то плагин по умолчанию использует `app`:
+
+```
+Vue.use(VueDataTooltip, "myID")
+```
+
 Если у вас Vue, тогда в main.js/main.ts аналогичные действия.
 
 Если будет ругаться на декларацию, тогда в `vue-shim.d.ts` добавить:
