@@ -3,7 +3,7 @@
 ## Установка
 
 ```
-npm i https://github.com/MishaNagibin/vue-data-tooltip.git
+npm i vue-data-tooltip
 ```
 
 Далее, если у вас Nuxt, то в вашем шаблоне, например `default.vue` импортируем плагин:
