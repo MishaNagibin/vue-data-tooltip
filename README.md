@@ -10,13 +10,20 @@ npm i vue-data-tooltip
 
 ```
 import VueDataTooltip from "vue-data-tooltip"
-Vue.use(VueDataTooltip)
+
+...
+
+mounted() {
+    Vue.use(VueDataTooltip)
+}
 ```
 
 Также в `Vue.use(VueDataTooltip)` вы можете передать id элемента в котором рендерится сайт, если же он указан не будет, то плагин по умолчанию использует `app`:
 
 ```
-Vue.use(VueDataTooltip, "myID")
+mounted() {
+    Vue.use(VueDataTooltip, "myID")
+}
 ```
 
 Если у вас Vue, тогда в main.js/main.ts аналогичные действия.
@@ -36,15 +43,11 @@ declare module "vue-data-tooltip";
 ```html
 <div data-tooltip="Смотри текст в тултипе">Наведи на меня</div>
 ```
+
 Или
+
 ```html
 <div :data-tooltip="tooltipText">Наведи на меня</div>
 
-...
-
-data() {
-    return {
-        tooltipText: "Какой-то текст",
-    }
-}
+... data() { return { tooltipText: "Какой-то текст", } }
 ```
